@@ -1,5 +1,5 @@
 import pickle
-import os
+# import os
 
 import pandas as pd
 
@@ -32,6 +32,6 @@ def predict():
     return df1.to_json(orient='records')
 
 
-if __name__ == '__main__':
-    PORT = os.environ('PORT', 5000)
-    app.run(host='0.0.0.0', port=PORT)
+# if __name__ == '__main__':
+#     PORT = os.environ('PORT', 5000)
+#     app.run(host='0.0.0.0', port=PORT)
